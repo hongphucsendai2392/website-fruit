@@ -1,0 +1,115 @@
+
+.container__modal{
+    @include flex(center, center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $main-color;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+    z-index: 101;
+    .container__logregi{
+        position: relative;
+        @include flex(center, center);
+        flex-direction: column;
+        width: 40%;
+        padding: 15px;
+        overflow: hidden;
+        font-size: 2rem;
+        background-color: $main-bg;
+        box-sizing: border-box;
+        box-shadow: $box-shadow;
+        @include tablet{
+            width: 80%;
+        }
+        @include mobile{
+            width: 100%;
+            flex-direction: column;
+        }
+       &__close{
+           position:absolute;
+           top:0;
+           right: 0;
+           font-size: 4rem;
+           cursor: pointer;
+           
+       }
+       &__title{
+        font-weight: 500;
+       }
+       &__user{
+           width: 100%;
+           margin-bottom: 20px;
+           &__name, &__password, &__password, &__email{
+               margin-bottom: 20px;
+               @include flex(center, space-between);
+            label{
+              font-size: 2rem;
+              margin-right: 10px;
+              width: 40%;
+            }
+            input{
+               font-size: 2rem;
+               outline: none;
+               border-radius: 5px;
+               padding: 5px;
+               &:focus{
+                   border: $main-color 2px solid;
+                  color: $main-color;
+               }
+            }
+            p{ width: 30%;
+                margin-left: 20px;
+                font-size: 1.5rem;
+               color: red;
+            }
+           }
+           &__name{
+           
+           }
+           &__password{
+   
+           }
+           &__email{
+   
+           }
+       }
+       &__gender{
+        @include flex(center,flex-start);
+        width: 100%;
+       
+        input:nth-child(2){
+        margin-left: 20px;
+
+        }
+       }
+       &__accept{
+        @include flex(center,flex-start);
+        width: 100%;
+        input{
+            font-size: 20px;
+        }
+       }
+       &__btn{
+
+           margin: 15px 0;
+           @include flex(center,center);
+        button{
+            font-size: 2rem;
+            margin-right: 25px;
+            padding: 5px;
+            cursor: pointer;
+            &:hover{
+                color: $main-color;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            color: $main-color;
+            text-decoration: underline;
+        }
+       }
+   }
+}

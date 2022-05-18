@@ -1,0 +1,153 @@
+
+
+.product{
+    
+    
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    @include flex(flex-start,flex-start);
+    flex-grow: 1;
+    &__images{
+        width: 75%;
+        &__container{
+            @include flex(flex-start,flex-start);
+            &__list{
+              flex-direction: column; 
+                &__item{
+                    cursor: pointer;
+                   margin-bottom: 10px;
+                   border: rgba(0, 0, 0, 0.842) 2px solid;
+                   width: 100px;
+                   height: 100px; 
+                   background-size: contain;
+                   overflow: hidden;
+                    img{
+                      width: 100%;
+                      height: 100%; 
+                        
+                    }
+                }
+            }
+            &__main{
+                position: relative;
+                margin-left: 40px;
+                width: 450px;
+                height: 750px; 
+                background-size: contain;
+                overflow: hidden;
+                right: 0;
+                img{
+                  
+                  width: auto;
+                  height: 100%;
+                
+                }
+            }
+        }
+      
+        &__description{
+            &__title{
+              text-align: center;
+              font-size: 3rem;
+              margin-top: 20px;
+              padding: 20px;
+              font-weight: 500;
+              color: $main-color;
+            }
+            &__content{
+              font-size: 1.2rem;
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient:vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              word-break:break-all;
+            }
+            &__toggle{
+               text-align: center;
+            }
+        }
+    }
+    &__info{
+        position: relative;
+        
+        width: 100%;
+        margin-left: 30px;
+        &__title{
+          margin-bottom: 20px;
+          font-weight: 400;
+          font-size: 3.5rem;
+         
+        }
+        &__item{
+
+            &__price{
+             font-size: 2rem;
+             color: $main-color;
+             
+            }
+            &__title{
+                margin-top: 10px;
+                font-weight: 400;
+                font-size: 2rem;
+            }
+            &__size{
+                @include flex(center,start);
+                flex-direction: row;
+                
+                &__list{
+                    margin-top: 10px;
+                    position: relative;
+                font-size: 2.5rem;
+                margin-right: 10px;
+                padding: 5px;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: $main-color;
+                &.active{
+                  color: #fff;
+                }
+                  span{
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%,-50%);
+                  }
+                }
+            }
+            &__quantity{
+                margin-top: 10px;
+                @include flex(start,space-between);
+                font-size: 2.5rem;
+                text-align: center;
+                 &__btn{
+                    border: #000 2px solid;
+                 }
+                 &__input{
+                    flex-grow: 1;
+                   
+                   border-top: #000 2px solid;
+                   border-bottom: #000 2px solid;
+                 }
+            }
+            &__btncart{
+               
+                width: 100%;
+                margin-top: 50px;
+                
+              @include flex(flex-start, space-between);
+                button{
+                    text-align: center;
+                    flex: 1 1 auto;
+                    margin-right: 10px;
+                   line-height: 1.5rem;
+                   padding: 5px;
+                    
+                }
+                
+            }
+        }
+    }
+}

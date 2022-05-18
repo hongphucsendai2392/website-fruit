@@ -1,0 +1,20 @@
+.catalog{
+    &__category{
+        @include flex(center,center);
+        flex-direction: row;
+        
+        &__item{
+          &__name{
+
+          }
+        }
+    }
+    &__container{
+          &__filter{
+              
+          }
+          &__content{
+
+          }
+    }
+}

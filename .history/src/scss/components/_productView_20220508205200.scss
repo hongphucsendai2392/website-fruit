@@ -1,0 +1,66 @@
+.product{
+    width: 80%;
+    @include flex(center,space-between);
+    flex-grow: 1;
+    &__images{
+        width: 80%;
+        &__container{
+            @include flex(flex-start,flex-start);
+            &__list{
+              flex-direction: column; 
+                &__item{
+                    
+                   width: 150px;
+                   height: 150px; 
+                   background-size: contain;
+                   overflow: hidden;
+                    img{
+                        
+                        
+                    }
+                }
+            }
+            &__main{
+                width: 550px;
+                height: 850px; 
+                background-size: contain;
+                overflow: hidden;
+                img{
+                  
+                  
+                
+                }
+            }
+        }
+      
+        &__description{
+            &__title{
+
+            }
+            &__content{
+
+            }
+            &__toggle{
+
+            }
+        }
+    }
+    &__info{
+        &__title{
+
+        }
+        &__item{
+            &__price{
+
+            }
+            &__title{
+
+            }
+            &__size{
+                &__list{
+
+                }
+            }
+        }
+    }
+}

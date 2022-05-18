@@ -1,0 +1,20 @@
+.connect__card{
+    @include flex(center,center);
+   flex-direction: column;
+    &__icon{
+     font-size: 3rem;
+     margin-bottom: 20px;
+     color: $main-color;
+     transition: 0.3s ease;
+     cursor: pointer;
+     &:hover{
+         transform: rotate(25deg);
+
+     }
+    }
+    &__info{
+        &__content{
+          font-size: 2rem;
+        }
+    }
+}

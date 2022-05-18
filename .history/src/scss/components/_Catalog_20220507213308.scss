@@ -1,0 +1,22 @@
+.catalog{
+   display: flex;
+    flex-direction: row;
+    &__category{
+        
+    
+        
+        &__item{
+          &__name{
+
+          }
+        }
+    }
+    &__container{
+          &__filter{
+              
+          }
+          &__content{
+
+          }
+    }
+}

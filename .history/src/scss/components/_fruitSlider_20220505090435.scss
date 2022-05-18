@@ -1,0 +1,62 @@
+.fruit__slider{
+    height:100vh;
+    overflow:hidden;
+    position: relative;
+    margin-top: $header-height;
+    @include tablet{
+        margin-top:$header-tablet-height;
+    }
+    @include mobile{
+        margin-top: $header-mobile-height;
+    }
+
+    &__container{
+        width:100%;
+        @include flex(center,center);
+        opacity:0;
+        visibility: hidden;
+        pointer-events:none;
+        inset:0;
+        &.active{
+            opacity:1;
+            visibility:visible;
+            pointer-events: visible;
+        }
+        &__item{
+          
+            @include flex(flex-start, space-between);
+             flex-direction: column;
+            &__title{   
+              font-size: 2.2rem;
+             margin-bottom: 50px;
+             font-weight: 500;
+            }
+            &__content{
+              font-size: 1.8rem;
+            }
+        }
+        &__img{
+            flex-grow: 1;
+            position: relative;
+            height: 100%;
+            pointer-events: none;
+            margin-left: 100px;
+            
+            img{
+               border-radius: 50%;
+               box-shadow: $box-shadow;
+            }
+        }
+    }
+    &__control{
+        position: absolute;
+        bottom: 0;
+        z-index: 1000;
+        &__item{
+
+        }
+        .numbercontrol{
+
+        }
+    }
+}

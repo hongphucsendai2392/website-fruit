@@ -1,0 +1,137 @@
+.fruit__slider{
+    position: relative;
+    height:100vh;
+    overflow:hidden;
+    margin-top: $header-height;
+    @include flex(center,center);
+    flex-direction: column;
+    @include tablet{
+        margin-top:$header-tablet-height;
+    }
+    @include mobile{
+        margin-top: $header-mobile-height;
+    }
+
+    &__container{
+       @include mobile{
+        @include flex(center,center);
+        flex-direction: column-reverse;
+       }
+        position: absolute;
+        width:100%;
+        @include flex(flex-start,center);
+        opacity:0;
+        visibility: hidden;
+        pointer-events:none;
+        inset:0;
+        &.active{
+            opacity:1;
+            visibility:visible;
+            pointer-events: visible;
+         
+        }
+        &__item{
+          
+            @include flex(flex-start, space-between);
+             flex-direction: column;
+             margin-top: 100px;
+         
+            &__title{   
+              font-size: 2.2rem;
+             margin-bottom: 50px;
+             font-weight: 500;
+             color: $main-color;
+            }
+            &__content{
+              font-size: 1.6rem;
+              line-height: 2.5rem;
+            }
+            &__btn{
+                margin-top: 20px;
+                border-color: $main-color ;
+                
+                
+                button{
+                position: relative;
+                background-color: $main-color;
+                padding: 10px;
+                padding-right: 20px;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+               
+                 i{
+                     position: absolute;
+                     top: 50%;
+                     transform: translateY(-50%);
+                     margin-left: 5px;
+                 }
+               }
+            }
+        }
+        &__img{
+            height: 400px;
+            width: 400px;
+            flex-grow: 1;
+            position: relative;
+         
+            pointer-events: none;
+            margin-left: 100px;
+            @include tablet{
+                margin-top: 70px ;
+            }
+            @include mobile{
+              
+                  height: 300px;
+                  width: 300px;
+                    margin-left: 0;
+                    border-radius: 0;
+                   
+                    box-shadow:none;
+                   
+            }
+         
+            img{
+               height: 50%;
+               border-radius: 50%;
+               box-shadow: $box-shadow;
+               height: 400px;
+               width: 400px;
+               @include mobile{
+                height: 300px;
+                width: 300px;
+                box-shadow: none;
+                border-radius: 0;
+               background-size: cover;
+               }
+              
+            }
+        }
+    }
+    &__control{
+        @include flex(flex-start, space-between);
+        position: relative;
+        left: -20%;
+        @include tablet{
+            left: 22%;
+            bottom: -100px;
+        }
+        &__item{
+            color: rgba(0, 0, 0, 0.774);
+         font-size: 3.5rem;
+         padding: 20px;
+         i{ 
+             font-size: 4.5rem;
+             position: absolute;
+             top: 50%;
+             transform: translate(-50%,-50%);
+             color: $main-color;
+         }
+        }
+        .numbercontrol{
+           font-size: 2.5rem;
+           color: rgba(0, 0, 0, 0.788);
+        }
+    }
+}

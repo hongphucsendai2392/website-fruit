@@ -1,0 +1,35 @@
+.catalog{
+   display: flex;
+   flex-direction: row;
+  
+
+    &__category{
+        margin-right: 15px;
+    
+        
+        &__item{
+          border: none;
+          padding: 10px;
+          font-size: 1.5rem;
+          font-weight: 500;
+          background-color:$main-color-confectionery;
+          margin-top: 10px;
+          &.active{
+            color: #fff;
+            background-color: $main-color-confectionery;
+          
+          }
+          &__name{
+           
+          }
+        }
+    }
+    &__container{
+          &__filter{
+              
+          }
+          &__content{
+
+          }
+    }
+}

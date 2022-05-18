@@ -1,0 +1,12 @@
+.connect__card{
+    @include flex(center,center);
+   flex-direction: column;
+    &__icon{
+     font-size: 2rem;
+    }
+    &__info{
+        &__content{
+
+        }
+    }
+}

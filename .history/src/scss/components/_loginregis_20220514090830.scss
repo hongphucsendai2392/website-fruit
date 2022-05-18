@@ -1,0 +1,40 @@
+
+.container__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $main-color;
+    width: 100%;
+    height: 100%;
+    .container__logregi{
+        @include flex(center, center);
+        flex-direction: column;
+        width: 100%;
+        margin-top: 200px;
+        overflow: hidden;
+        
+       &__title{
+   
+       }
+       &__user{
+           &__name{
+   
+           }
+           &__password{
+   
+           }
+           &__email{
+   
+           }
+       }
+       &__gender{
+   
+       }
+       &__accept{
+   
+       }
+       &__btn{
+   
+       }
+   }
+}

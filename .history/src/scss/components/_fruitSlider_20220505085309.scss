@@ -1,0 +1,55 @@
+.fruit__slider{
+    height:100vh;
+    overflow:hidden;
+    position: relative;
+    margin-top: $header-height;
+    @include tablet{
+        margin-top:$header-tablet-height;
+    }
+    @include mobile{
+        margin-top: $header-mobile-height;
+    }
+
+    &__container{
+        width:100%;
+        @include flex(center,center);
+        opacity:0;
+        visibility: hidden;
+        pointer-events:none;
+        inset:0;
+        &.active{
+            opacity:1;
+            visibility:visible;
+            pointer-events: visible;
+        }
+        &__item{
+          
+            @include flex(center, space-between);
+             flex-direction: column;
+            &__title{
+            @include flex(flex-start, center);
+              font-size: 1.5rem;
+             
+            }
+            &__content{
+
+            }
+        }
+        &__img{
+            img{
+
+            }
+        }
+    }
+    &__control{
+        position: absolute;
+        bottom: 0;
+        z-index: 1000;
+        &__item{
+
+        }
+        .numbercontrol{
+
+        }
+    }
+}

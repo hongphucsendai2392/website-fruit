@@ -1,0 +1,35 @@
+.product{
+    @include flex(flex-start,flex-start);
+    &__images{
+        @include flex(flex-start,flex-start);
+      
+        &__list{
+            
+            &__item{
+                width:100px;
+                height: 100px;
+                
+                margin-bottom:10px;
+                
+                cursor:pointer;
+                img{
+                   
+                    background-size: cover;
+                }
+            }
+        }
+        &__main{
+            margin-left: 20px;
+            padding-top:100%;
+            position:relative;
+            img{
+              position: absolute;
+              top:0;
+              left:0;
+              height:100%;
+              
+            
+            }
+        }
+    }
+}

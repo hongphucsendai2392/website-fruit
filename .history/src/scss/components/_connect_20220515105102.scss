@@ -1,0 +1,13 @@
+.connect__card{
+    @include flex(center,center);
+   flex-direction: column;
+    &__icon{
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+    }
+    &__info{
+        &__content{
+          font-size: 2rem;
+        }
+    }
+}

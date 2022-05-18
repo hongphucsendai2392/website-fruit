@@ -1,0 +1,36 @@
+.catalog{
+   display: flex;
+   flex-direction: row;
+  
+
+    &__category{
+        margin-right: 50px;
+       
+        &__item{
+          width: 100vh;
+        
+          border: none;
+          padding: 15px;
+          font-size: 1.5rem;
+          font-weight: 500;
+          background-color:$main-color-confectionery;
+          margin-top: 15px;
+          &.active{
+            color: #fff;
+            
+          
+          }
+          &__name{
+           
+          }
+        }
+    }
+    &__container{
+          &__filter{
+             font-size: 3rem; 
+          }
+          &__content{
+
+          }
+    }
+}

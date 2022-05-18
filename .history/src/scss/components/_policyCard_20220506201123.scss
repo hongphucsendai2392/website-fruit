@@ -1,0 +1,37 @@
+.policy__card{
+     position: relative;
+     @include flex(center,center);
+     box-shadow: $box-shadow;
+     padding:20px;
+     top: -40vh;
+     
+     transition: top 0.5s ease;
+     
+     @include tablet{
+         top: 0;
+     }
+     &:hover{
+      
+     top: -41vh;
+     }
+    &__icon{
+        font-size: 3rem;
+        color: $main-color;
+        i{
+
+        }
+    }
+    &__info{
+        margin-left: 15px;
+        &__name{
+            font-size: 1.5rem;
+            color: $main-color;
+            font-weight: 500;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        &__content{
+
+        }
+    }
+}

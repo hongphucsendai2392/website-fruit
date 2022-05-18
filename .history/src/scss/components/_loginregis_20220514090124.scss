@@ -1,0 +1,29 @@
+
+.container__logregi{
+     @include flex(center, center);
+     flex-direction: column;
+     width: 100%;
+    &__title{
+
+    }
+    &__user{
+        &__name{
+
+        }
+        &__password{
+
+        }
+        &__email{
+
+        }
+    }
+    &__gender{
+
+    }
+    &__accept{
+
+    }
+    &__btn{
+
+    }
+}

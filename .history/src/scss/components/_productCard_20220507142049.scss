@@ -1,0 +1,32 @@
+.product__card{
+
+    text-align: center;
+    
+    
+    box-shadow: $box-shadow;
+    &__img{
+        
+        position: relative;
+        box-sizing: border-box;
+       
+    
+         img{
+          
+
+         }
+    }
+    &__title{
+        
+      margin-top: auto;
+      color: $main-color;
+    }
+    &__price{
+        margin-top: auto;
+        &__old{
+
+        }
+    }
+    &__btn{
+
+    }
+}

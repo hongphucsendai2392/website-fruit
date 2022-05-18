@@ -1,0 +1,77 @@
+.catalog{
+   display: flex;
+  
+   flex-direction: row;
+   @include mobile{
+     flex-direction: column;
+      text-align: center;
+   }
+    &__category{
+      @include mobile{
+         background-color: #fff;
+         width: 100%;
+         flex-direction: column;
+         text-align: center;
+      }
+        margin-right: 50px;
+       
+        &__item{ 
+          border: none;
+          padding: 15px;
+          font-size: 1.5rem;
+          font-weight: 500;
+          background-color:$main-color-confectionery;
+          margin-top: 15px;
+        
+          &.active{
+            color: #fff;
+            
+          
+          }
+          &__name{
+           
+          }
+        }
+    }
+    &__container{
+        
+          &__content{
+            &__filter{
+              position: relative;
+               @include flex(center,flex-start);
+               font-size: 3rem; 
+               margin-top: 15px;
+               margin-bottom: 10px;
+                @include mobile{
+                  width: 100%;
+                }
+               input{
+                 position: relative;
+                 overflow: hidden;
+                 font-size: 1.5rem;
+                  outline: none;
+                  border: #000 2px solid;
+                  padding-left: 10px;
+                  padding: 5px;
+                  &:hover{
+                    border-color: $main-color;
+                  }
+                  &::placeholder{
+                    font-size: 1.2rem;
+                  }
+               }
+               i{
+                 @include mobile{
+                   margin-left: 15pc;
+                 }
+                cursor: pointer;
+                &:hover{
+                  color: $main-color;
+                }
+               }
+  
+               
+            }
+          }
+    }
+}

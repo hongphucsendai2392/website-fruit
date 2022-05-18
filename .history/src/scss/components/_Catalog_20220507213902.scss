@@ -1,0 +1,23 @@
+.catalog{
+   @include flex(center,center);
+  
+
+    &__category{
+        
+    
+        
+        &__item{
+          &__name{
+
+          }
+        }
+    }
+    &__container{
+          &__filter{
+              
+          }
+          &__content{
+
+          }
+    }
+}

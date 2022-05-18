@@ -1,0 +1,33 @@
+.product__card{
+   @include flex(center,center);
+   flex-direction: column;
+    text-align: center;
+    
+    box-shadow: $box-shadow;
+    &__img{
+        
+       
+    
+         img{
+          
+
+         }
+    }
+    &__content{
+        margin-top: auto;
+        &__title{
+        font-size: 1.5rem;
+        color: $main-color;
+    
+        }
+        &__price{
+          
+            &__old{
+    
+            }
+        }
+    }
+    &__btn{
+
+    }
+}

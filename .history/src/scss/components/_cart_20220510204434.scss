@@ -1,0 +1,60 @@
+.cart{
+    @include flex(flex-start, center);
+    @include mobile{
+        flex-wrap: wrap;
+    }
+    &__info{
+        width: 30%;
+        margin-right: 30px;
+        margin-top: 30px;
+        padding: 30px;
+        box-shadow: $box-shadow;
+       
+        &__title{
+            & > * {
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 1.25rem;
+            }
+            &__price{
+                @include flex(center,space-between);
+                padding: 10px 0;
+                font-size: 1.25rem;
+                span:nth-child(2){
+                    font-size: 2rem;
+                    color: $main-color;
+                    font-weight: 500;
+                }
+            }
+        }
+        &__btn > *{
+            margin-bottom: 20px;
+        }
+    }
+    &__list{
+
+        @include flex(center,flex-start);
+        flex-direction: column;
+        &__item{
+          
+            flex-direction: row;
+            &__img{
+                img{
+
+                }
+            }
+            &__info{
+                &__info{
+
+                }
+                &__price{
+
+                }
+                &__quantity{
+
+                }
+            }
+        }
+    }
+}

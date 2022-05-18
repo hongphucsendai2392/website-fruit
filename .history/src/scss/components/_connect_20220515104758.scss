@@ -1,0 +1,12 @@
+.connect__card{
+    @include flex(center,center);
+    font-size: 3rem;
+    &__icon{
+
+    }
+    &__info{
+        &__content{
+
+        }
+    }
+}

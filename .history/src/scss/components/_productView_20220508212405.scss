@@ -1,0 +1,90 @@
+
+
+.product{
+    
+    
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    @include flex(flex-start,flex-start);
+    flex-grow: 1;
+    &__images{
+        
+        &__container{
+            @include flex(flex-start,flex-start);
+            &__list{
+              flex-direction: column; 
+                &__item{
+                    cursor: pointer;
+                   margin-bottom: 10px;
+                   border: rgba(0, 0, 0, 0.842) 2px solid;
+                   width: 150px;
+                   height: 150px; 
+                   background-size: contain;
+                   overflow: hidden;
+                    img{
+                        
+                        
+                    }
+                }
+            }
+            &__main{
+                position: relative;
+                margin-left: 40px;
+                width: 550px;
+                height: 750px; 
+                background-size: contain;
+                overflow: hidden;
+                right: 0;
+                img{
+                  
+                  width: 100%;
+                  height: 100%;
+                
+                }
+            }
+        }
+      
+        &__description{
+            &__title{
+              text-align: center;
+              font-size: 3rem;
+              margin-top: 20px;
+              padding: 20px;
+              font-weight: 500;
+              color: $main-color;
+            }
+            &__content{
+              font-size: 1.2rem;
+            }
+            &__toggle{
+               text-align: center;
+            }
+        }
+    }
+    &__info{
+        width: 100%;
+        &__title{
+
+        }
+        &__item{
+            &__price{
+
+            }
+            &__title{
+
+            }
+            &__size{
+                @include flex(center,start);
+                flex-direction: row;
+                width: 20px;
+                height: 20px;
+                background-color: $main-color;
+                &__list{
+                font-size: 2.5rem;
+              
+                }
+            }
+        }
+    }
+}

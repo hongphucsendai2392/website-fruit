@@ -1,0 +1,36 @@
+.product__view__modal{
+    position:fixed;
+    left:0;
+    top:0;
+    padding-top: 100px;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color: $main-color-modal;
+    z-index: 102;
+    &__content{
+        margin: auto;
+        padding: 2rem;
+        background-color: $main-bg;
+        width: 50%;
+        position: relative;
+        @include tablet{
+            width: 90%;
+        }
+        .product{
+            width: 100%;
+            .product__images__container__main{
+                margin-left: 10px;
+                height: 550px;
+                @include mobile{
+                  
+                   
+                    height: 250px;
+                }
+            }
+            .product__info{
+                margin-left: 10px;
+            }
+        }
+    }
+}

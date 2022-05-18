@@ -1,0 +1,17 @@
+.product__view__modal{
+    position:fixed;
+    left:0;
+    top:0;
+    width:50%;
+    height:50%;
+    overflow:auto;
+    background-color: $main-color-modal;
+    z-index: 102;
+    &__content{
+        margin: auto;
+        padding: 2rem;
+        background-color: $main-bg;
+        width: 50%;
+        position: relative;
+    }
+}

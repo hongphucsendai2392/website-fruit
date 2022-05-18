@@ -1,0 +1,41 @@
+.product{
+    @include flex(center,space-between);
+    &__images{
+      
+        &__container{
+            &__list{
+               
+                &__item{
+                    
+                    
+                  
+                    img{
+                        
+                        
+                    }
+                }
+            }
+            &__main{
+              
+                img{
+                  
+                  
+                
+                }
+            }
+        }
+      
+        &__description{
+            &__title{
+
+            }
+            &__content{
+
+            }
+            &__toggle{
+
+            }
+        }
+    }
+
+}

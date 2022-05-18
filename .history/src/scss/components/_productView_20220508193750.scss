@@ -1,0 +1,32 @@
+.product{
+    @include flex(flex-start,flex-start);
+    &__images{
+        @include flex(flex-start,flex-start);
+      
+        &__list{
+            
+            &__item{
+                width:100px;
+                height: 100px;
+                overflow: hidden;
+                margin-bottom:10px;
+                background-size: contain;
+                cursor:pointer;
+                img{
+                    
+                    
+                }
+            }
+        }
+        &__main{
+            margin-left: 20px;
+           
+            position:relative;
+            img{
+             
+              
+            
+            }
+        }
+    }
+}

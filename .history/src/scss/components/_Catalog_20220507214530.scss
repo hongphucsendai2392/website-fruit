@@ -1,0 +1,25 @@
+.catalog{
+   display: flex;
+   flex-direction: row;
+  
+
+    &__category{
+        margin-right: 15px;
+    
+        
+        &__item{
+          padding: 20px;
+          &__name{
+   font-size: 3rem;
+          }
+        }
+    }
+    &__container{
+          &__filter{
+              
+          }
+          &__content{
+
+          }
+    }
+}

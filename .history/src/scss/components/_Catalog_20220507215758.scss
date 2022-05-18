@@ -1,0 +1,31 @@
+.catalog{
+   display: flex;
+   flex-direction: row;
+  
+
+    &__category{
+        margin-right: 15px;
+    
+        
+        &__item{
+          padding: 15px;
+          font-size: 1.5rem;
+          font-weight: 500;
+          &.active{
+            color:$main-color;
+          
+          }
+          &__name{
+   
+          }
+        }
+    }
+    &__container{
+          &__filter{
+              
+          }
+          &__content{
+
+          }
+    }
+}

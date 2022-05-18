@@ -1,0 +1,60 @@
+.product{
+    @include flex(center,space-between);
+    flex-grow: 1;
+    &__images{
+        
+        &__container{
+            @include flex(center,center);
+            &__list{
+               
+                &__item{
+                    
+                    
+                  
+                    img{
+                        
+                        
+                    }
+                }
+            }
+            &__main{
+              
+                img{
+                  
+                  
+                
+                }
+            }
+        }
+      
+        &__description{
+            &__title{
+
+            }
+            &__content{
+
+            }
+            &__toggle{
+
+            }
+        }
+    }
+    &__info{
+        &__title{
+
+        }
+        &__item{
+            &__price{
+
+            }
+            &__title{
+
+            }
+            &__size{
+                &__list{
+
+                }
+            }
+        }
+    }
+}

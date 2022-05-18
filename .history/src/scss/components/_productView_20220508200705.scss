@@ -1,0 +1,48 @@
+.product{
+    @include flex(flex-start,flex-start);
+    &__images{
+        @include flex(center,center);
+      
+        &__list{
+            
+            &__item{
+                @include flex(flex-start,flex-start);
+                width:100px;
+                height: 100px;
+                overflow: hidden;
+                margin-bottom:10px;
+                background-size: contain;
+                cursor:pointer;
+                img{
+                    
+                    
+                }
+            }
+        }
+        &__main{
+            margin-left: 20px;     
+            position:relative;
+            width: 400px;
+            height: 600px;
+            background-size: cover;
+           
+            img{
+              
+              height: 100%;
+              width: 100%;
+            
+            }
+        }
+        &__description{
+            &__title{
+
+            }
+            &__content{
+
+            }
+            &__toggle{
+
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.container__map__decrep{
+    @include flex(center,center);
+    margin-bottom: 50px;
+
+    .gmap_canvas{
+        @include flex(center,flex-start);
+        flex-direction: column;
+        .gmap_iframe{
+            width: 50vw;
+            height: 50vh;
+            @include tablet{
+                width: 80vw;
+                
+               
+            }
+            @include mobile{
+                width: 100vw;
+            }
+        }
+        
+        p{
+           left: 0;
+            @include tablet{
+                width: 80vw;
+                
+               
+            }
+         margin-top: 10px;
+          font-size: 2rem;
+        }
+    }
+}
+h1{
+    margin-top: 70px;
+    text-align: center;
+    font-weight: 500;
+}
